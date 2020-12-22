@@ -169,10 +169,42 @@ void task3()
 	}
 }
 
+void task4()
+{
+	cout<<"\n\n\n\tTASK 4"<<endl;
+	// variable declaration
+	int task = 0;
+	do{
+		cout<<"\n\n\n"<<endl;
+		cout<<"Select a task from the list below: "<<endl;
+		cout<<"Press 1 for task 1"<<endl;
+		cout<<"Press 2 for task 2"<<endl;
+		cout<<"Press 3 for task 3"<<endl;
+		cout<<"Press 0 to quit"<<endl;
+		cin>>task;
+		cout<<"\n"<<endl;
+		switch(task)
+		{
+			case 1:
+				task1();
+				break;
+			case 2:
+				task2();
+				break;
+			case 3:
+				task3();
+				break;
+			default:
+				break;
+		}
+	}while(task != 0);
+}
+
 int main(){
 	task1();
 	task2();
 	task3();
+	task4();
 	
 	return 0;
 }
