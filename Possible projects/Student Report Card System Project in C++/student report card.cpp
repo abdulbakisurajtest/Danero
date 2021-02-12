@@ -2,12 +2,16 @@
 //                   HEADER FILE USED IN PROJECT
 //****************************************************************
 
-#include<conio.h>
-#include<stdio.h>
-#include<process.h>
-#include<fstream.h>
-#include<iomanip.h>
+#include <conio.h>
+#include <fstream>
+#include <iomanip>
+#include <iostream>
+#include <windows.h>
 
+using namespace std;
+void clrscr(){
+	system("cls");
+}
 //***************************************************************
 //                   CLASS USED IN PROJECT
 //****************************************************************
@@ -104,7 +108,6 @@ void write_student()
 //***************************************************************
 //      function to read all records from file
 //****************************************************************
-
 
 void display_all()
 {
@@ -293,11 +296,11 @@ void result()
 void intro()
 {
     clrscr();
-    gotoxy(35,11);
+    //gotoxy(35,11);
     cout<<"STUDENT";
-    gotoxy(33,14);
+    //gotoxy(33,14);
     cout<<"REPORT CARD";
-    gotoxy(35,17);
+    //gotoxy(35,17);
     cout<<"PROJECT";
     cout<<"\n\nMADE BY : Code With C";
     cout<<"\n\nCONTACT : codewithc.com";
@@ -360,7 +363,7 @@ void entry_menu()
 //****************************************************************
 
 
-void main()
+int main()
 {
     char ch;
     intro();
