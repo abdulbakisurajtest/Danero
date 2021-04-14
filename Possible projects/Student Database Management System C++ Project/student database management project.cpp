@@ -9,6 +9,7 @@
 #include <iomanip>
 
 using namespace std;
+
 int main()
 {
     FILE *fp, *ft;

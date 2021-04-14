@@ -6,7 +6,9 @@
 #include<cstdio>
 #include<cstdlib>
 #include<iomanip>
+
 using namespace std;
+
 //global variable declaration
 int k=7,r=0,flag=0;
 COORD coord = {0, 0};

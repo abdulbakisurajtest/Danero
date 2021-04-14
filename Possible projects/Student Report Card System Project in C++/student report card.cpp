@@ -9,9 +9,11 @@
 #include <windows.h>
 
 using namespace std;
+
 void clrscr(){
 	system("cls");
 }
+
 //***************************************************************
 //                   CLASS USED IN PROJECT
 //****************************************************************
@@ -20,7 +22,7 @@ class student
 {
     int rollno;
     char name[50];
-    int p_marks,c_marks,m_marks,e_marks,cs_marks;
+    int p_marks, c_marks, m_marks, e_marks, cs_marks;
     float per;
     char grade;
     int std;
@@ -296,11 +298,8 @@ void result()
 void intro()
 {
     clrscr();
-    //gotoxy(35,11);
     cout<<"STUDENT";
-    //gotoxy(33,14);
     cout<<"REPORT CARD";
-    //gotoxy(35,17);
     cout<<"PROJECT";
     cout<<"\n\nMADE BY : Code With C";
     cout<<"\n\nCONTACT : codewithc.com";
@@ -378,16 +377,16 @@ int main()
         ch=getche();
         switch(ch)
         {
-        case '1':
-            clrscr();
-            result();
-            break;
-        case '2':
-            entry_menu();
-            break;
-        case '3':
-            exit(0);
-        default :
+	        case '1':
+	            clrscr();
+	            result();
+				break;
+	        case '2':
+	            entry_menu();
+	            break;
+	        case '3':
+	            exit(0);
+	        default :
             cout<<"\a";
         }
     }
